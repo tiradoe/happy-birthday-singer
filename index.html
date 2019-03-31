@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Happy Birthday!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="app.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <!-- Include the Web Playback SDK -->
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    
+    <!-- Include our Javascript -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body class="background">
+    <div id="message-bar">Sorry Couldn't find that</div>
+    
+    <h1 id="birthday-header"></h1>
+
+
+    <div id="search-container" class="centered">
+      <span id="loading">Connecting to Spotify...</span>
+      <video id="simmons-dancing" class="centered hidden" autoplay="autoplay" loop="true" muted>
+        <source src="https://cdn.glitch.com/a8c2cf5d-2d1c-4ca3-b3db-b3b083a26d24%2FWetAdeptAmericantoad.webm?1553928512762" />
+      </video>
+      
+      <span class="hidden" id="share-link"></span>
+
+        <div id="search-group" class="input-group col-md-4 centered hidden">
+              <input id="search-field" class="form-control py-2" type="search" placeholder="First Name" />
+              <span class="input-group-append">
+                  <button id="search-button" class="btn btn-outline-secondary" type="button">
+                      <i class="fa fa-search"></i>
+                  </button>
+              </span>
+        </div>
+      
+        
+        <a id="home-link" class="hidden" href="https://happy-birthday-singer.glitch.me">Make your own!</a>
+    </div>
+  </body>
+</html>
